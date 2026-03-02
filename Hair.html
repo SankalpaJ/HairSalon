@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ma Absolute Salon - Bengaluru</title>
+
+<meta name="description" content="Ma Absolute Salon in Begur, Bengaluru offers luxury haircuts, hair spa, beauty services and bridal packages. Book your appointment today.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f7f4ee;
+}
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+</style>
+</head>
+
+<body class="text-gray-800">
+
+<!-- HEADER -->
+<header class="bg-[#2c2a28] text-white sticky top-0 z-50 shadow-sm">
+  <div class="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
+
+    <!-- Logo + Name -->
+    <div class="flex items-center space-x-3">
+      <img src="logo.jpeg.jpeg" alt="Ma Absolute Salon Logo"
+           class="h-12 w-auto object-contain">
+      <h1 class="text-xl md:text-2xl tracking-wide text-[#c6a75e] font-semibold">
+        Ma Absolute Salon
+      </h1>
+    </div>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-6 text-sm uppercase tracking-wider">
+      <a href="#about" class="hover:text-[#c6a75e] transition">About</a>
+      <a href="#services" class="hover:text-[#c6a75e] transition">Services</a>
+      <a href="#gallery" class="hover:text-[#c6a75e] transition">Gallery</a>
+      <a href="#video" class="hover:text-[#c6a75e] transition">Salon Tour</a>
+      <a href="#booking" class="hover:text-[#c6a75e] transition">Booking</a>
+      <a href="#contact" class="hover:text-[#c6a75e] transition">Contact</a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button onclick="toggleMenu()" class="md:hidden text-2xl">
+      ☰
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-[#2c2a28] px-6 pb-4 text-sm uppercase">
+    <a href="#about" class="block py-2 hover:text-[#c6a75e]">About</a>
+    <a href="#services" class="block py-2 hover:text-[#c6a75e]">Services</a>
+    <a href="#gallery" class="block py-2 hover:text-[#c6a75e]">Gallery</a>
+    <a href="#video" class="block py-2 hover:text-[#c6a75e]">Salon Tour</a>
+    <a href="#booking" class="block py-2 hover:text-[#c6a75e]">Booking</a>
+    <a href="#contact" class="block py-2 hover:text-[#c6a75e]">Contact</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative h-[80vh] flex items-center justify-center text-center">
+  
+  <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9"
+       class="absolute inset-0 w-full h-full object-cover" />
+
+  <div class="absolute inset-0 bg-black/60"></div>
+  
+  <div class="relative z-10 text-white px-6 max-w-3xl">
+
+    <h1 class="text-4xl md:text-6xl mb-4 font-serif tracking-wide"
+        style="font-family: 'Playfair Display', serif;">
+        Ma Absolute Salon
+    </h1>
+
+    <h2 class="text-3xl mb-12 text-[#c6a75e] text-center">
+        Luxury Hair & Beauty Experience
+    </h2>
+
+    <p class="mb-10 text-gray-200 text-base md:text-lg"
+       style="font-family: 'Poppins', sans-serif;">
+        Elegant grooming crafted with perfection in Bengaluru
+    </p>
+
+    <a href="#booking"
+       class="bg-[#c6a75e] px-10 py-3 uppercase text-sm tracking-widest hover:bg-[#b8954d] transition rounded">
+       Book Appointment
+    </a>
+
+  </div>
+</section>
+
+<!-- ABOUT --> 
+ <section id="about" class="py-20 text-center bg-white"> 
+    <div class="max-w-4xl mx-auto px-6"> 
+    <h3 class="text-3xl mb-6">About Us</h3>
+    <p class="text-gray-600 leading-relaxed"> 
+        Ma Absolute Salon is a premium beauty destination in Begur, Bengaluru. 
+        We specialize in hair styling, hair spa, skin treatments and bridal makeovers. 
+        Our expert stylists ensure hygiene, comfort and personalized service for every client. </p> 
+    </div>
+ </section>
+ 
+<!-- SERVICES -->
+<section id="services" class="py-20 text-center bg-[#f7f4ee]"> 
+  <h3 class="text-3xl mb-12">Our Services</h3> 
+
+  <div class="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-6">
+
+    <!-- Haircut -->
+    <div class="bg-white shadow rounded overflow-hidden">
+      <img src="haircut.jpeg" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h4 class="text-lg text-[#c6a75e] mb-2">Haircut & Styling</h4>
+        <p class="text-sm">Women, Men & Kids professional styling.</p>
+      </div>
+    </div>
+
+    <!-- Hair Wash -->
+    <div class="bg-white shadow rounded overflow-hidden">
+      <img src="hairWash2.jpeg" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h4 class="text-lg text-[#c6a75e] mb-2">Hair Wash & Blow Dry</h4>
+        <p class="text-sm">Deep cleansing with smooth finish styling.</p>
+      </div>
+    </div>
+
+
+    <!-- Keratin -->
+    <div class="bg-white shadow rounded overflow-hidden">
+      <img src="keritinTretmeent.jpeg" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h4 class="text-lg text-[#c6a75e] mb-2">Keratin, Smoothing & Rebonding</h4>
+        <p class="text-sm">Frizz-free, silky and long-lasting straightening.</p>
+      </div>
+    </div>
+
+    <!-- Facial -->
+    <div class="bg-white shadow rounded overflow-hidden">
+      <img src="Facial_CleanUp.jpeg" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h4 class="text-lg text-[#c6a75e] mb-2">Facial & Clean-Up</h4>
+        <p class="text-sm">Glow enhancing facials & deep skin cleansing.</p>
+      </div>
+    </div>
+
+     <!-- Hair Coloring -->
+    <div class="bg-white shadow rounded overflow-hidden">
+      <img src="Coloring_Highlighting.jpeg" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h4 class="text-lg text-[#c6a75e] mb-2">Hair Coloring & Highlighting</h4>
+        <p class="text-sm">Global color, highlights & trendy shades.</p>
+      </div>
+    </div>
+
+
+    <!-- Threading -->
+    <div class="bg-white shadow rounded overflow-hidden">
+      <img src="threadWax2.jpeg" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h4 class="text-lg text-[#c6a75e] mb-2">Threading & Waxing</h4>
+        <p class="text-sm">Smooth and hygienic grooming services.</p>
+      </div>
+    </div>
+
+    <!-- Manicure -->
+    <div class="bg-white shadow rounded overflow-hidden">
+      <img src="Pedicure.jpeg" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h4 class="text-lg text-[#c6a75e] mb-2">Manicure & Pedicure</h4>
+        <p class="text-sm">Luxury nail care & relaxing spa treatment.</p>
+      </div>
+    </div>
+
+    <!-- Body Massage -->
+    <div class="bg-white shadow rounded overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h4 class="text-lg text-[#c6a75e] mb-2">Signature Relaxation Therapy</h4>
+        <p class="text-sm">Premium full body massage for stress relief.</p>
+      </div>
+    </div>
+
+    <!-- Bridal -->
+    <div class="bg-white shadow rounded overflow-hidden">
+      <img src="bridal2.jpeg" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h4 class="text-lg text-[#c6a75e] mb-2">Bridal Makeup</h4>
+        <p class="text-sm">Traditional & modern bridal beauty packages.</p>
+      </div>
+    </div>
+
+    <!-- Grooming -->
+    <div class="bg-white shadow rounded overflow-hidden">
+      <img src="grooming2.jpeg" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h4 class="text-lg text-[#c6a75e] mb-2">Grooming Makeup</h4>
+        <p class="text-sm">Professional makeup for special occasions.</p>
+      </div>
+    </div>
+
+    <!-- Personalized Beauty Services -->
+<div class="bg-white shadow rounded overflow-hidden">
+  <img src="PersonalBeuty.jpeg" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h4 class="text-lg text-[#c6a75e] mb-2">Personalized Beauty Services</h4>
+    <p class="text-sm"><p class="text-sm">Refined beauty. Designed for you.</p></p>
+  </div>
+</div>
+
+  </div>
+</section>
+             
+<!-- GALLERY --> 
+ <section id="gallery" class="py-20 text-center bg-white"> 
+    <h3 class="text-3xl mb-12">Gallery</h3> 
+    <div class="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-6 px-6">
+       <img src="g3.jpeg" class="w-full h-64 object-cover shadow rounded">
+      <img src="p2.jpeg" class="w-full h-64 object-cover shadow rounded"> 
+      <img src="g1.jpeg" class="w-full h-64 object-cover shadow rounded">
+        <img src="g2.jpeg" class="w-full h-64 object-cover shadow rounded">
+        <img src="logoo.jpeg" class="w-full h-64 object-cover shadow rounded">   
+        <img src="p1.jpeg" class="w-full h-64 object-cover shadow rounded">
+        
+        <img src="p3.jpeg" class="w-full h-64 object-cover shadow rounded"> 
+        <img src="headMassag.jpeg" class="w-full h-64 object-cover shadow rounded"> 
+        <img src="facial.jpeg" class="w-full h-64 object-cover shadow rounded"> 
+        <img src="massag.jpeg" class="w-full h-64 object-cover shadow rounded">
+        <img src="g4.jpeg" class="w-full h-64 object-cover shadow rounded">
+        <img src="g5.jpeg" class="w-full h-64 object-cover shadow rounded">
+    </div> 
+</section> 
+
+<!-- VIDEO -->
+  <section id="video" class="py-20 bg-[#f7f4ee] text-center"> 
+    <h3 class="text-3xl mb-8">Salon Tour</h3> <div class="max-w-4xl mx-auto px-6"> 
+        <video controls preload="metadata" poster="p3.jpeg" class="w-full min-h-[250px] max-h-[500px] object-cover rounded-lg shadow-lg"> 
+            <source src="SalonTour.mp4" type="video/mp4"> </video> </div> </section>
+
+<!-- BOOKING -->
+<section id="booking" class="py-20 bg-white text-center">
+  <h3 class="text-3xl mb-8">Book Appointment</h3>
+
+  <div class="max-w-2xl mx-auto bg-[#f7f4ee] p-8 shadow rounded-lg">
+    <form class="space-y-4">
+
+      <input type="text" name="name" placeholder="Your Name" required class="w-full border p-3 rounded">
+
+      <input type="tel" name="phone" placeholder="Phone Number" required class="w-full border p-3 rounded">
+
+      <input type="date" name="date" required class="w-full border p-3 rounded">
+
+      <!-- Time + AM/PM -->
+      <div class="grid grid-cols-2 gap-4">
+        <input type="time" name="time" required 
+          class="w-full border p-3 rounded">
+
+        <select name="ampm" required 
+          class="w-full border p-3 rounded">
+          <option value="">AM / PM</option>
+          <option value="AM">AM</option>
+          <option value="PM">PM</option>
+        </select>
+      </div>
+
+      <select name="service" required class="w-full border p-3 rounded">
+        <option value="">Select Service</option>
+        <option>Hair Cut & Styling</option>
+        <option>Hair Wash & Blow Dry</option>
+        <option>Keratin, Smoothing & Rebounding</option>
+        <option>Facial & Clean-up</option>
+        <option>Hair Coloring & Highlighting</option>
+        <option>Threading & Waxing</option>
+        <option>Manicure & Pedicure</option>
+        <option>Signature Relaxation Therapy</option>
+        <option>Hair Cut & Styling</option>
+        <option>Bridal Makeup</option>
+        <option>Grooming Makeup</option>
+        <option>Personalized Beauty Service</option>
+      </select>
+
+      <button type="button"
+        onclick="sendToWhatsApp()"
+        class="bg-[#c6a75e] text-white px-6 py-3 uppercase w-full rounded hover:bg-[#b8954d] transition">
+        Confirm Booking
+      </button>
+
+    </form>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 bg-[#2c2a28] text-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl mb-12 text-[#c6a75e] text-center">
+      Contact & Location
+    </h3>
+
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div class="space-y-6 text-lg">
+        <p>
+          📍 Ma Absolute Salon, <br>
+          1st Floor, Vijaya Raghavn Building,<br>
+          Manipal Country Road,<br>
+          Opp. Vijaya Springwoods,<br>
+          Begur, Bengaluru - 560068
+        </p>
+
+        <p>📞 9845122256</p>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/919845122256?text=Hello%20Ma%20Absolute%20Salon,%20I%20would%20like%20to%20book%20an%20appointment."
+           target="_blank"
+           class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg shadow transition">
+           💬 Chat on WhatsApp
+        </a>
+
+        <p>🕒 Mon - Sun: 9:00 AM - 9:00 PM</p>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps?q=1st+Floor,+Vijaya+Raghavn+Building,+Manipal+Country+Road,+Opp.+Vijaya+Springwoods,+Begur,+Bengaluru+-+560068&output=embed"
+        width="100%" height="350" style="border:0;"
+        loading="lazy"
+        class="rounded shadow-lg">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-[#1f1d1b] text-gray-400 py-6 text-center text-sm">
+  © 2026 Ma Absolute Salon. All Rights Reserved.
+</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById("mobileMenu").classList.toggle("hidden");
+}
+
+function sendToWhatsApp() {
+
+  var name = document.querySelector('input[name="name"]').value;
+  var phone = document.querySelector('input[name="phone"]').value;
+  var date = document.querySelector('input[name="date"]').value;
+  var time = document.querySelector('input[name="time"]').value;
+  var service = document.querySelector('select[name="service"]').value;
+
+  if(name === "" || phone === "" || date === "" || time === "" || service === ""){
+    alert("Please fill all fields");
+    return;
+  }
+
+  var message = "Hello Ma Absolute Salon,%0A%0A"
+    + "New Appointment Request:%0A"
+    + "Name: " + name + "%0A"
+    + "Phone: " + phone + "%0A"
+    + "Service: " + service + "%0A"
+    + "Date: " + date + "%0A"
+    + "Time: " + time;
+
+  var whatsappNumber = "919845122256";
+
+  var url = "https://wa.me/" + whatsappNumber + "?text=" + message;
+
+  window.open(url, '_blank');
+}
+</script>
+
+</body>
+</html>
